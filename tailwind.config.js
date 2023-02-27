@@ -10,7 +10,14 @@ module.exports = {
       fontFamily: {
         rubik: ["rubik", "sans-serif"],
       },
+
+      colors: {
+        'dark-bg': "#12161c" 
+      }
     },
+
+    
+
   },
   plugins: [require("tailwindcss-animatecss")],
 };
