@@ -6,7 +6,7 @@ export default function Welcomer() {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowComponenet(false);
-    }, 5000);
+    }, 8000);
 
     return () => clearTimeout(timeoutId);
   }, []);
