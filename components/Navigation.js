@@ -1,6 +1,11 @@
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navigation() {
+  const [addPromptVisibility, setAddPromptVisibility] = useState(false)
+
+
+
   return (
     <div className="flex w-[70%] h-[90px] bg-black items-center justify-evenly sticky top-0">
       <h1 className="text-transparent bg-clip-text bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-rose-500 to-indigo-700 text-3xl font-extrabold">
@@ -15,12 +20,12 @@ export default function Navigation() {
 
       <ul className="text-white">
         <li className="">
-          <Link
-            href="Add Prompt"
+          <button
             className="hover:text-slate-400 transition-all ease-in"
+            onClick={() => setAddPromptVisibility(true)}
           >
             Add Prompt
-          </Link>
+          </button>
         </li>
       </ul>
     </div>
